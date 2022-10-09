@@ -1,0 +1,57 @@
+/* Tablet */
+#what .items {
+  display: block;
+  padding: 1rem;
+}
+#what .items .item div {
+  text-align: left;
+}
+/* Align icon to left */
+#what .items .item {
+  display: flex;
+  align-items: left;
+}
+/* Position Items */
+#what .items .item i {
+  align-self: center;
+  margin-bottom: 0;
+  margin-right: 1.3rem;
+}
+
+/* Smartphone */
+@media (max-width:500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #navbar .logo {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  #navbar ul {
+    padding: 0.5rem;
+  }
+  #showcase .showcase-content {
+    top: 110px;
+  }
+  #who {
+    display: block;
+  }
+  #who .who-img {
+    display: none;
+  }
+  #clients .items img {
+    width: 80%;
+  }
+  #clients .items div:last-child {
+    display: none;
+  }
+  #contact {
+    flex-direction: column;
+  }
+  #contact .map {
+    flex: unset;
+    height: 300px;
+    border-top: 5px #333 solid;
+  }
+}
